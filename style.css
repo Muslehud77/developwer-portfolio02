@@ -31,6 +31,8 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 150px;
+  margin-right: 75px;
 }
 .nav-title {
   font-size: 45px;
@@ -47,5 +49,17 @@ nav > ul {
   list-style: none;
 }
 nav li {
-  margin: 50px;
+  margin: 20px;
+}
+.header {
+  background-color: rgba(255, 68, 0, 0.059);
+}
+/* banner related styles */
+.banner {
+  padding: 30px 20px 20px 150px;
+  display: flex;
+  align-items: center;
+}
+.banner .profile-pic {
+  width: 400px;
 }
