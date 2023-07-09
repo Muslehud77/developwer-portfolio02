@@ -11,6 +11,7 @@
     />
     <title>Developer Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/951ec0bf9d.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <header class="header">
@@ -34,8 +35,8 @@
             Shot what able cold new see hold.Friendly as an betrayed formerly
             he. Morning because as to society behaved moments.
           </p>
-          <button class="button-primary Download-Button">Download CV</button>
-          <button class="button-primary contact-button">Contact</button>
+          <button class="button-primary Download-Button"><i class="fa-solid fa-arrow-down"></i> Download CV</button>
+          <button class="button-primary contact-button"><i class="fa-solid fa-phone"></i> Contact</button>
         </div>
 
         <img class="profile-pic" src="images/hardy.png" alt="" />
@@ -195,7 +196,7 @@
         </div>
         <div class="cv-download">
           <button class="button-primary Download-Button">
-            <a target="_blank" href="">Download Cv</a>
+            <a target="_blank" href=""><i class="fa-solid fa-arrow-down"></i> Download Cv</a>
           </button>
         </div>
       </section>
@@ -203,14 +204,14 @@
     <footer>
       <section class="footer">
         <div class="footer-social">
-          <div>
+          <div class="half-width">
           <h2 class="footer-title">Lets Connect</h2>
           <p class="footer-details">
             Please fill out the form on this section to contact with me or call
             between 9:00 A.M and 8.00 P.M ET, Monday through Friday.
           </p>
           </div>
-          <div>
+          <div class="social-icons">
             <img src="images/icons/facebook.png" alt="" class="footer-img" />
           <img
             src="images/icons/twitter.png"
@@ -220,12 +221,19 @@
           </div>
         </div>
         <div class="footer-form">
-          <form>
+          <form class="half-width">
             <h2 class="footer-title">Message Me</h2>
-            <input type="Name" >
+            <input class="name" type="Name" placeholder="Your Name">
+            <input class="email" type="Name" placeholder="Your Email">
+            <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input class="button-primary Submit" type="Submit">
+
           </form>
         </div>
+        
       </section>
+      <div class="footer-text"><p><small>© Musleh 2023 , Practicing Web Developing.</small></p></div>
+      
     </footer>
   </body>
 </html>
