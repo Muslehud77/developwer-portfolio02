@@ -5,6 +5,10 @@ body {
   font-family: "Open Sans", sans-serif;
   margin: 0;
 }
+header {
+  max-width: 1300px;
+  margin: 0 auto;
+}
 section {
   margin-top: 100px;
 }
@@ -19,16 +23,23 @@ section {
   );
   color: aliceblue;
   border: none;
-  border-radius: 2px;
-  padding: 8px 15px;
-  font-weight: 600;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: large;
+  font-weight: 700;
   cursor: pointer;
 }
-.button-primary a {
-  color: aliceblue;
-}
+
 .button-primary:hover {
   box-shadow: 0 0 5px 1px rgba(255, 153, 0, 0.586);
+}
+.hire-me a {
+  /* text-decoration: none; */
+  color: aliceblue !important;
+}
+.Download-Button a {
+  text-decoration: none;
+  color: aliceblue !important;
 }
 /* Nav related styles */
 nav {
@@ -94,7 +105,7 @@ nav li {
 }
 /* main section styles */
 main {
-  max-width: 850px;
+  max-width: 950px;
   margin: 0 auto;
 }
 
@@ -136,6 +147,7 @@ main {
 .what-i-do-title {
   font-size: 35px;
   margin-bottom: 0;
+  color: #474747;
 }
 #what-i-do-description {
   color: #757575;
@@ -146,22 +158,60 @@ main {
 .skills-container {
   display: flex;
   gap: 15px;
-  width: 200px;
+  justify-content: space-around;
+  align-items: center;
 }
 .skill {
-  padding: 30px;
+  padding: 25px;
   text-align: left;
   box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
 }
-
+.skill > img {
+  max-height: 35px;
+  max-width: 35px;
+}
 .skill-description {
   color: #757575;
-
   font-size: 16px;
+  text-align: left;
 }
 /* resume section styles  */
-.resume-column-title {
+.resume-column-title,
+.experience-column-title {
   color: #474747;
   font-size: 25px;
   font-weight: 700;
+}
+.resume-item-title,
+.experience-item-title {
+  font-weight: 700;
+  color: #474747;
+}
+.resume-container {
+  display: flex;
+  gap: 50px;
+}
+.resume-section-title {
+  text-align: center;
+  font-size: 35px;
+  color: #474747;
+}
+.resume-item-info,
+.resume-item-description,
+.experience-item-info,
+.experience-item-description {
+  color: #757575;
+}
+.resume-item-title,
+.experience-item-title {
+  margin-bottom: 0;
+}
+.resume-item-info,
+.experience-item-info {
+  margin-top: 5px;
+  font-weight: 600;
+}
+.cv-download {
+  margin-top: 20px;
+  text-align: center;
 }
